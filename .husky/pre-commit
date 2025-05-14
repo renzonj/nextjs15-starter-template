@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# Detect which package manager to use
+if [ -f "yarn.lock" ]; then
+  yarn lint-staged
+elif [ -f "package-lock.json" ]; then
+  npm run lint-staged
+else
+  pnpm lint-staged
+fi

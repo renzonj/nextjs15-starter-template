@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# Detect which package manager to use
+if [ -f "yarn.lock" ]; then
+  yarn commitlint --edit $1
+elif [ -f "package-lock.json" ]; then
+  npx commitlint --edit $1
+else
+  pnpm commitlint --edit $1
+fi
