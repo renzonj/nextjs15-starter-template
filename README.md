@@ -22,8 +22,8 @@ Make sure that ESLint and Prettier VS Code extensions are installed for the best
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/renzonj/nextjs-starter.git
-   cd nextjs-starter
+   git clone https://github.com/renzonj/nextjs15-starter-template.git
+   cd nextjs15-starter-template
    ```
 
 2. **Install Dependencies**:
